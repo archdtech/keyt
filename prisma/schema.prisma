@@ -1,0 +1,73 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+<<<<<<< HEAD
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  name      String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Post {
+  id        String   @id @default(cuid())
+  title     String
+  content   String?
+  published Boolean  @default(false)
+  authorId  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+=======
+// COMMENTED OUT: Default models not needed for MVP
+// model User {
+//   id        String   @id @default(cuid())
+//   email     String   @unique
+//   name      String?
+//   createdAt DateTime @default(now())
+//   updatedAt DateTime @updatedAt
+// }
+
+// model Post {
+//   id        String   @id @default(cuid())
+//   title     String
+//   content   String?
+//   published Boolean  @default(false)
+//   authorId  String
+//   createdAt DateTime @default(now())
+//   updatedAt DateTime @updatedAt
+// }
+
+// CORE MODEL: Venture Studio Application Processing
+model Application {
+  id           String   @id @default(cuid())
+  founderName  String
+  email        String
+  companyName  String
+  description  String
+  stage        String   // pre-seed, seed, series-a, growth
+  industry     String
+  location     String
+  teamSize     Int
+  fundingGoal  Int
+  submittedAt  DateTime @default(now())
+  status       String   @default("pending") // pending, under_review, interviewing, approved, rejected
+  score        Int?     // AI scoring 0-100
+  strengths    String?  // JSON string array of AI-identified strengths
+  concerns     String?  // JSON string array of AI-identified concerns
+  
+  @@map("applications")
+>>>>>>> c2f06731328de0386b0bee11efb25e40e3cb0f10
+}
