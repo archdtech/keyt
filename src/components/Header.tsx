@@ -6,15 +6,7 @@ import Link from 'next/link';
 
 const Header = () => {
   const [isScaleMenuOpen, setIsScaleMenuOpen] = useState(false);
-<<<<<<< HEAD
   const scaleMenuRef = useRef<HTMLDivElement>(null);
-=======
-  // Commented out programs menu
-  // const [isProgramsMenuOpen, setIsProgramsMenuOpen] = useState(false);
-  const scaleMenuRef = useRef<HTMLDivElement>(null);
-  // Commented out programs menu ref
-  // const programsMenuRef = useRef<HTMLDivElement>(null);
->>>>>>> 16f625df652cd5d5e96faff8a3e0aeaab3d57b6e
 
   const scaleServices = [
     { 
@@ -55,44 +47,12 @@ const Header = () => {
     }
   ];
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-  // Commented out programs
-  // const programs = [
-  //   { 
-  //     title: "Operational Excellence", 
-  //     href: "/operational-excellence",
-  //     description: "Operations optimization and efficiency programs",
-  //     color: "yellow"
-  //   },
-  //   { 
-  //     title: "Commercial Due Diligence", 
-  //     href: "/commercial-due-diligence",
-  //     description: "Business due diligence and validation programs",
-  //     color: "blue"
-  //   }
-  // ];
-
->>>>>>> c2f06731328de0386b0bee11efb25e40e3cb0f10
->>>>>>> 16f625df652cd5d5e96faff8a3e0aeaab3d57b6e
   // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (scaleMenuRef.current && !scaleMenuRef.current.contains(event.target as Node)) {
         setIsScaleMenuOpen(false);
       }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-      // Commented out programs menu click outside handler
-      // if (programsMenuRef.current && !programsMenuRef.current.contains(event.target as Node)) {
-      //   setIsProgramsMenuOpen(false);
-      // }
->>>>>>> c2f06731328de0386b0bee11efb25e40e3cb0f10
->>>>>>> 16f625df652cd5d5e96faff8a3e0aeaab3d57b6e
     };
 
     document.addEventListener('mousedown', handleClickOutside);
@@ -193,47 +153,6 @@ const Header = () => {
                   </div>
                 )}
               </div>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-              {/* Commented out Programs menu */}
-              {/* <div className="relative" ref={programsMenuRef}>
-                <button
-                  onClick={() => setIsProgramsMenuOpen(!isProgramsMenuOpen)}
-                  className="text-gray-300 hover:text-white px-2 py-2 text-xs lg:text-sm font-medium border-b-2 border-transparent hover:border-[#8B5CF6] transition-colors duration-200 flex items-center"
-                >
-                  Programs
-                  <ChevronDown className={`ml-1 w-4 h-4 transition-transform ${isProgramsMenuOpen ? 'rotate-180' : ''}`} />
-                </button>
-                
-                <div className="absolute top-full left-0 mt-2 w-96 bg-[#0D0D0D] border border-gray-800 rounded-lg shadow-xl overflow-hidden">
-                  <div className="grid grid-cols-1 gap-2 p-4">
-                    {programs.map((program, index) => (
-                      <Link
-                        key={index}
-                        href={program.href}
-                        className="block p-3 rounded-lg hover:bg-gray-900 transition-colors duration-200 group"
-                        onClick={() => setIsProgramsMenuOpen(false)}
-                      >
-                        <div className="flex items-start space-x-3">
-                          <div className={`w-2 h-2 rounded-full bg-${program.color}-600 mt-2 flex-shrink-0`}></div>
-                          <div>
-                            <h4 className="text-white font-medium group-hover:text-[#8B5CF6] transition-colors">
-                              {program.title}
-                            </h4>
-                            <p className="text-gray-400 text-sm mt-1">
-                              {program.description}
-                            </p>
-                          </div>
-                        </div>
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              </div> */}
->>>>>>> c2f06731328de0386b0bee11efb25e40e3cb0f10
->>>>>>> 16f625df652cd5d5e96faff8a3e0aeaab3d57b6e
               <Link
                 href="/portfolio"
                 className="text-gray-300 hover:text-white px-2 py-2 text-xs lg:text-sm font-medium border-b-2 border-transparent hover:border-[#8B5CF6] transition-colors duration-200"
@@ -246,19 +165,6 @@ const Header = () => {
               >
                 Insights
               </Link>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-              {/* Commented out Careers menu */}
-              {/* <Link
-                href="/careers"
-                className="text-gray-300 hover:text-white px-2 py-2 text-xs lg:text-sm font-medium border-b-2 border-transparent hover:border-[#8B5CF6] transition-colors duration-200"
-              >
-                Careers
-              </Link> */}
->>>>>>> c2f06731328de0386b0bee11efb25e40e3cb0f10
->>>>>>> 16f625df652cd5d5e96faff8a3e0aeaab3d57b6e
             </div>
           </div>
 
