@@ -1,12 +1,4 @@
-<<<<<<< HEAD
 import type { Metadata } from 'next';
-=======
-<<<<<<< HEAD
-import type { Metadata } from 'next';
-=======
-import type { Metadata } from "next";
->>>>>>> c2f06731328de0386b0bee11efb25e40e3cb0f10
->>>>>>> 16f625df652cd5d5e96faff8a3e0aeaab3d57b6e
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
@@ -22,10 +14,6 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 16f625df652cd5d5e96faff8a3e0aeaab3d57b6e
   title: "Keymaster Venture Studio - Building Venture Systems Together",
   description: "Keymaster Venture Studio helps founders build foundational systems and infrastructure. We specialize in venture architecture, ecosystem design, AI systems, and sustainable growth for early-stage startups.",
   keywords: ["Keymaster", "Venture Studio", "Venture Architecture", "Ecosystem Design", "AI Systems", "Startup Consulting", "Growth Strategy", "Product Discovery", "Think Tank", "Founder Programs"],
@@ -68,65 +56,20 @@ export const metadata: Metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
-<<<<<<< HEAD
-=======
-=======
-  title: "Keyteller - AI Business Innovation & Strategy",
-  description: "Keyteller helps businesses leverage AI for innovation, strategy, and operational efficiency through workshops, think tanks, and consulting services.",
-  keywords: ["Keyteller", "AI", "Business Strategy", "Innovation", "Workshops", "Consulting", "Product Design", "Strategy Sprints"],
-  authors: [{ name: "Keyteller Team" }],
-  openGraph: {
-    title: "Keyteller - AI Business Innovation",
-    description: "Transform your business with AI-powered strategy and innovation workshops",
-    url: "https://keyteller.com",
-    siteName: "Keyteller",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Keyteller - AI Business Innovation",
-    description: "Transform your business with AI-powered strategy and innovation workshops",
->>>>>>> c2f06731328de0386b0bee11efb25e40e3cb0f10
->>>>>>> 16f625df652cd5d5e96faff8a3e0aeaab3d57b6e
   },
 };
 
 export default function RootLayout({
   children,
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 16f625df652cd5d5e96faff8a3e0aeaab3d57b6e
 }: {
   children: React.ReactNode;
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}>
-<<<<<<< HEAD
-=======
-=======
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
-      >
->>>>>>> c2f06731328de0386b0bee11efb25e40e3cb0f10
->>>>>>> 16f625df652cd5d5e96faff8a3e0aeaab3d57b6e
         {children}
         <Toaster />
       </body>
     </html>
   );
-<<<<<<< HEAD
 }
-=======
-<<<<<<< HEAD
-}
-=======
-}
->>>>>>> c2f06731328de0386b0bee11efb25e40e3cb0f10
->>>>>>> 16f625df652cd5d5e96faff8a3e0aeaab3d57b6e
